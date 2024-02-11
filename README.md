@@ -1,2 +1,2 @@
 # Fukuro_Object_Detection
-Object Detection for Fukuro's Robot
+Untuk menginstall utilities silahkan gunakan command berikut: `pip install -r requirements.txt`
