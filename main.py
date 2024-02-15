@@ -11,7 +11,7 @@ from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # model
-model = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=False, pretrained_backbone=False)
+model = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_fpn(weights=None)
 WEIGHTS_FILE = "./V2_Mobile_faster_rcnn_state.pth"
 
 num_classes = 2
