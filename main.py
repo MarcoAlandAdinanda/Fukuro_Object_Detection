@@ -12,7 +12,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # model
 model = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=False, pretrained_backbone=False)
-WEIGHTS_FILE = "./faster_rcnn_state.pth"
+WEIGHTS_FILE = "./V2_Mobile_faster_rcnn_state.pth"
 
 num_classes = 2
 in_features = model.roi_heads.box_predictor.cls_score.in_features
